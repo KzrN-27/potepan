@@ -1,0 +1,876 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hover-opacity:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+.hover-text-color:hover {
+    color: #f79214;
+    transition: color 0.2s;
+}
+
+/* header */
+header {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+}
+.header-contents {
+    max-width: 1140px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header img {
+    width: 185px;
+    height: 20px;
+}
+header ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+header li {
+    list-style: none;
+    margin-right: 30px;
+}
+header a {
+    text-decoration: none;
+}
+header a span:first-child {
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: bold;
+}
+header a span:last-child {
+    font-family: "Noto Sans JP";
+    font-size: 10px;
+    font-weight: bold;
+}
+header span {
+    color: black;
+}
+.header-nav {
+    line-height: 1;
+}
+header ul li:last-child {
+    margin-right: 0;
+    align-self: center;
+}
+.couns {
+    font-family: "Noto Sans JP";
+    font-size: 12px;
+    color: white;
+    background-color: #f79415;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+/* main section-top */
+main {
+    font-family: "Noto Sans JP";
+    font-weight: 400;
+}
+.top {
+    background: url(pote_img/top-hero.png) no-repeat right;
+    background-size: auto 100%;
+}
+.top-contents {
+    max-width: 1140px;
+    padding: 200px 50px 0 50px;
+    margin: 0 auto;
+}
+.top-contents1 {
+    max-width: 337px;
+    position: relative;
+}
+.top-contents1 p {
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.top-contents1 p:first-of-type {
+    padding: 25px 0 10px 0;
+}
+.top span {
+    color: #f79415;
+}
+.top a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #f79415;
+    padding: 20px;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+.top .top-logo1 {
+    width: 100%;
+}
+.top-logo2 {
+    position: absolute;
+    top: 0;
+    right: -175px;
+}
+.top-small {
+    max-width: 512px;
+    font-size: 10px;
+    color: #888888;
+    padding: 140px 0 20px 0;
+}
+
+/* intro */
+.intro {
+    background-color: #f79415;
+}
+.intro-contents {
+    max-width: 1140px;
+    padding: 75px 50px 80px 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro-left {
+    width: 53%;
+    color: white;
+}
+.intro-right {
+    width: 320px;
+}
+.intro h1 {
+    font-family: "Lato";
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.intro p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2;
+}
+.intro a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #f79415;
+    background-color: white;
+    padding: 8px;
+    border-radius: 30px;
+}
+.intro-right a span:first-child {
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 700;
+}
+.intro-right a span:last-child {
+    font-size: 14px;
+    font-weight: 700;
+}
+.feature {
+
+}
+.feature-contents {
+    max-width: 1140px;
+    padding: 0 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+.feature-title {
+    padding: 80px 0;
+}
+.feature-title h1 {
+    font-family: "Lato";
+    font-size: 50px;
+    font-weight: 700;
+}
+.feature-title p {
+    font-size: 16px;
+    font-weight: 700;
+}
+.feature-title::after {
+    content: "";
+    display: inline-block;
+    border-bottom: 5px solid #f79415;
+    width: 50px;
+    margin-top: 20px;
+}
+.feature-list {
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 100px;
+    background-color: #fdfaf5;
+    position: relative;
+    border-radius: 25px;
+}
+.feature-list > p {
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #f79415;
+    background-color: #fdfaf5;
+    border-radius: 50px;
+    position: absolute;
+    top: -50px;
+    left: 45%;
+}
+.list-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.list-text {
+    padding-bottom: 30px;
+}
+.list-text p {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.list-contents {
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+}
+.list-contents h3 {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 5px solid #f79415;
+    padding-bottom: 5px;
+}
+.list-contents h3 img {
+    margin-left: 10px;
+    width: 34px;
+    height: auto;
+}
+.list-contents li {
+    display: inline-block;
+    width: 24%;
+    list-style: none;
+    padding: 0 20px;
+}
+.list-img {
+    width: 100%;
+}
+.list-img img {
+    width: 100%;
+    height: auto;
+}
+.list2 .list-text span {
+    font-family: "Lato";
+    font-size: 30px;
+    color: #f79415;
+    font-weight: 700;
+}
+.list2 .list-contents li {
+    width: 33%;
+    padding: 0 60px;
+}
+.list2 .list-contents img {
+    width: 100%;
+    height: auto;
+}
+.list3 .list-contents {
+    background-color: #fdfaf5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.list3 span {
+    font-family: "Lato";
+    font-size: 30px;
+    color: #f79415;
+    font-weight: 700;
+}
+.engineer {
+    width: 33%;
+    padding: 0 20px;
+    margin-right: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+}
+.list-contents .engineer:last-child {
+    margin-right: 0;
+}
+.engineer .company {
+    width: 70%;
+    padding: 50px 0 20px 0;
+}
+.engineer div {
+    width: 100%;
+}
+.engineer .con {
+    display: flex;
+    justify-content: space-between;
+}
+.con p {
+    text-align: left;
+    margin-left: 20px;
+}
+.con-name {
+    font-size: 14px;
+    color: #f79415;
+    font-weight: bold;
+}
+.job {
+    font-size: 20px;
+    font-weight: bold;
+}
+.engineer .message {
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    position: relative;
+}
+.engineer .message::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 30px;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #f6f6f6;
+}
+
+/* course */
+.course {
+    background-color: #f6f6f6;
+}
+.course-contents {
+    max-width: 1140px;
+    padding: 0 50px;
+    margin: 0 auto;
+    background-image: url(pote_img/bg-section-top-course.png);
+    background-size: 281px 275px;
+    background-repeat: no-repeat;
+    background-position: top 60px right 30px;
+    padding-top: 35px;
+}
+.course-title {
+    text-align: center;
+    padding: 60px 0 60px 0;
+}
+.course-title h1 {
+    font-size: 46px;
+}
+.course-title p {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.course-title::after {
+    content: "";
+    display: inline-block;
+    border-bottom: 5px solid #f79415;
+    width: 50px;
+    margin-top: 20px;
+}
+.select-course {
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.select-course a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+.web-course {
+    width: 30%;
+    margin-left: -50px;
+    margin-right: 30px;
+    border: 3px solid #f79316;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Rails-course {
+    width: 30%;
+    margin-left: -50px;
+    margin-right: 30px;
+    border: 3px solid #f64e07;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.select-course h3 {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+.scourse-text {
+    width: 70%;
+}
+.scourse1 p:first-child {
+    color: #f79214;
+    font-size: 16px;
+}
+.scourse2 p:first-child {
+    color: #f64e07;
+    font-size: 16px;
+    font-weight: bold;
+}
+.scourse-text p:nth-child(2) {
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    padding: 2px 20px;
+    margin: 20px 0 10px 0;
+    border-radius: 20px;
+    display: inline-block;
+}
+.scourse-text li {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    list-style: none;
+}
+.scourse1 li::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #f79214;
+    margin: 0 10px;
+}
+.scourse2 li::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #f64e07;
+    margin: 0 10px;
+}
+.course-link {
+    color: #999999;
+    font-size: 14px;
+    display: inline-block;
+    float: right;
+}
+.course-link::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 7px;
+    border-top: 3px solid #f79214;
+    border-right: 3px solid #f79214;
+    transform: rotate(45deg);
+}
+.course-button {
+    text-align: center;
+    padding: 20px 0 80px 0;
+}
+.course-button a {
+    width: 300px;
+    color: white;
+    background-color: #f79214;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+.course-button span:first-child {
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: bold;
+}
+.course-button span:last-child {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* service */
+.service {
+    background-color: #fdfaf5;
+    padding-bottom: 80px;
+}
+.service-contents {
+    max-width: 1140px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.service-title {
+    text-align: center;
+    padding: 70px 0;
+}
+.service-title h1 {
+    font-size: 46px;
+}
+.service-title p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.service-title::after {
+    content: "";
+    display: inline-block;
+    border-bottom: 5px solid #f79415;
+    width: 50px;
+    margin-top: 20px;
+}
+.service-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.message-text {
+    background-color: white;
+    padding: 40px 150px 40px 40px;
+    margin-right: -100px;
+    position: relative;
+}
+.message-text h3 {
+    color: #f79214;
+    font-family: "Lato";
+    font-size: 50px;
+    position: absolute;
+    top: -25px;
+    left: 25px;
+}
+.message-text p {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.message-text p:last-child {
+    padding-bottom: 0;
+}
+.message-img {
+    position: relative;
+}
+.mimg-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.mimg-text p {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.mimg-text span {
+    font-size: 24px;
+}
+
+/* interview */
+.interview-contents {
+    max-width: 1140px;
+    padding: 70px 50px 70px 50px;
+    margin: 0 auto;
+}
+.interview-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.interview-title h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+.interview-title p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.interview-title::after {
+    content: "";
+    display: inline-block;
+    border-bottom: 5px solid #f79415;
+    width: 50px;
+    margin-top: 20px;
+}
+.interview-main a {
+    text-decoration: none;
+}
+.interview-main ul {
+    display: flex;
+    justify-content: space-between;
+}
+.interview li {
+    margin-right: 40px;
+    width: 33%;
+    list-style: none;
+}
+.interview li:last-child {
+    margin-right: 0;
+}
+.interview-img {
+    overflow: hidden;
+    position: relative;
+}
+.interview li img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
+.profile {
+    background: linear-gradient(to top, 
+    rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0));
+    padding: 80px 20px 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.prof-course {
+    font-size: 16px;
+    color: #f79214;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+.name-job p {
+    color: white;
+    display: inline-block;
+}
+.name-job  p span:first-child {
+    font-size: 20px;
+}
+.name-job  p span:last-child {
+    font-size: 16px;
+}
+.name-job  p:last-child {
+    font-size: 12px;
+}
+.interview-text {
+    margin-top: 10px;
+}
+.interview-text p {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+.interview-button {
+    text-align: center;
+    margin-top: 50px;
+}
+.interview-button a {
+    display: inline-block;
+    text-decoration: none;
+    width: 300px;
+    padding: 5px;
+    color: white;
+    background-color: #f79214;
+    border-radius: 30px;
+}
+.interview-button span:first-child {
+    font-size: 20px;
+    font-family: "Lato";
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.interview-button span:last-child {
+    font-size: 14px;
+    font-weight: bold;
+}
+.hover-scale:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+/* bottom */
+.bottom {
+    background-color: #f6f6f6;
+    padding-bottom: 80px;
+}
+.bottom-contents {
+    max-width: 1140px;
+    padding: 0 50px;
+    margin: 0 auto;
+    background-image: url(pote_img/bg-section-top-course.png);
+    background-size: 281px 275px;
+    background-repeat: no-repeat;
+    background-position: top 40px right 50px;
+    padding-top: 35px;
+}
+.bottom-title {
+    text-align: center;
+    padding: 40px 0 50px 0;
+}
+.bottom-title h1 {
+    font-size: 46px;
+    padding-bottom: 10px;
+}
+.bottom-title p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.bottom-title::after {
+    content: "";
+    display: inline-block;
+    border-bottom: 5px solid #f79415;
+    width: 50px;
+    margin-top: 20px;
+}
+.bottom-service ul {
+    margin: 0 -20px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-service li {
+    list-style: none;
+    padding: 0 20px;
+    width: calc(100% / 3);
+}
+.bottom-service a {
+    text-decoration: none;
+}
+.bottom-service div {
+    padding: 0 20px;
+    height: 190px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.bottom-service img {
+    width: 100%;
+}
+.bottom-free div {
+    border: 2px solid #f79214;
+}
+.bottom-career div {
+    border: 2px solid #0bae76;
+}
+.bottom-engineer div {
+    border: 2px solid black;
+}
+.bottom-service p {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    padding-top: 20px;
+}
+
+/* footer */
+footer {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #f79214;
+}
+.footer-contents {
+    max-width: 1140px;
+    padding: 0 50px;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+}
+.page-top {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: -105px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.arrow {
+    width: 12px;
+    height: 12px;
+    margin: 0 10px;
+    border-top: 4px solid #f79214;
+    border-left: 4px solid #f79214;
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+.move-top:hover > .page-top {
+    background-color: #f79214;
+}
+.move-top:hover .arrow {
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    max-width: 280px;
+    padding-bottom: 20px;
+}
+.social-icon {
+    display: flex;
+}
+.social-icon img{
+    max-width: 60px;
+}
+.social-icon img:first-child {
+    margin-right: 20px;
+}
+.flist1 p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer-company {
+    padding: 10px 0 40px 0;
+}
+.footer-company p {
+    line-height: 24px;
+}
+.flist2 li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+.flist2 a {
+    text-decoration: none;
+    color: white;
+}
+.flist2 li:last-child {
+    margin-bottom: 0;
+}
+.flist2 span:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.flist2 span:last-child {
+    font-size: 16px;
+}
+.flist3 {
+    align-self: flex-end;
+}
+.flist3 img {
+    width: auto;
+    height: 70px;
+}
+footer .small {
+    padding-top: 50px;
+}
+footer small {
+    font-size: 12px;
+}
